@@ -106,6 +106,9 @@ dependencies:
   '@tauri-apps/plugin-window':
     specifier: 2.0.0-alpha.0
     version: 2.0.0-alpha.0
+  '@uidotdev/usehooks':
+    specifier: ^2.4.0
+    version: 2.4.0(react-dom@18.2.0)(react@18.2.0)
   '@vitejs/plugin-react-swc':
     specifier: ^3.3.2
     version: 3.3.2(vite@4.4.8)
@@ -136,6 +139,9 @@ dependencies:
   react-qr-code:
     specifier: ^2.0.12
     version: 2.0.12(react@18.2.0)
+  react-tooltip:
+    specifier: ^5.21.5
+    version: 5.21.5(react-dom@18.2.0)(react@18.2.0)
   recharts:
     specifier: ^2.7.2
     version: 2.7.2(prop-types@15.8.1)(react-dom@18.2.0)(react@18.2.0)
@@ -2663,6 +2669,17 @@ packages:
   /@types/scheduler@0.16.3:
     resolution: {integrity: sha512-5cJ8CB4yAx7BH1oMvdU0Jh9lrEXyPkar6F9G/ERswkCuvP4KQZfZkSjcMbAICCpQTN4OuZn8tz0HiKv9TGZgrQ==}
 
+  /@uidotdev/usehooks@2.4.0(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-NrpTsZUGsawYxFbEXrd8+FPpfziC4M01GSQgYWOnGa84UiavqVCzCL5bSRe6rfQc4QsHS2rGAA0h63ya/j+p6A==}
+    engines: {node: '>=16'}
+    peerDependencies:
+      react: '>=18.0.0'
+      react-dom: '>=18.0.0'
+    dependencies:
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+    dev: false
+
   /@vitejs/plugin-react-swc@3.3.2(vite@4.4.8):
     resolution: {integrity: sha512-VJFWY5sfoZerQRvJrh518h3AcQt6f/yTuWn4/TRB+dqmYU0NX1qz7qM5Wfd+gOQqUzQW4gxKqKN3KpE/P3+zrA==}
     peerDependencies:
@@ -4452,6 +4469,18 @@ packages:
       invariant: 2.2.4
       react: 18.2.0
       tslib: 2.5.2
+    dev: false
+
+  /react-tooltip@5.21.5(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-ey70qf6pBGi4U6xpyNlZAHobAhlo2dfxmImR2Bzd/DbLTsAYWz3TEaK+RMFuUZMq6hSPRbUHQSkP2rHBq4uFVg==}
+    peerDependencies:
+      react: '>=16.14.0'
+      react-dom: '>=16.14.0'
+    dependencies:
+      '@floating-ui/dom': 1.2.8
+      classnames: 2.3.2
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
     dev: false
 
   /react-transition-group@2.9.0(react-dom@18.2.0)(react@18.2.0):

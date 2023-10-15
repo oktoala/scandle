@@ -10,9 +10,11 @@ use local_ip_address::local_ip;
 // Learn more about Tauri commands at https://tauri.app/v1/guides/features/command
 #[tauri::command]
 fn greet() -> String {
-      match local_ip() {
+    match local_ip() {
         Ok(ip) => format!("{}", ip),
-        Err(err) => format!("{}", err),
+        Err(_) => format!(
+            "IP tidak ditemukan, tutup aplikasi, hubungkan network, lalu buka lagi aplikasi ini"
+        ),
     }
 }
 
